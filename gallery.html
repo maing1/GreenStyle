@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery — GreenStyle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="site-header">
+    <a href="index.html" class="logo">green<em>style</em>.</a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <span class="eyebrow">Lookbook</span>
+      <h1>Our gallery</h1>
+      <p>A collection of moments from the studio, the field and our seasonal lookbooks.</p>
+
+      <!-- Image gallery -->
+      <div class="gallery">
+        <img src="images/example.jpg"  alt="Spring linen look">
+        <img src="images/look1.jpg" alt="Folded organic cotton stack">
+        <img src="images/look2.jpg" alt="Plant-dyed fabric texture">
+        <img src="images/look3.jpg" alt="Artisan at the sewing machine">
+        <img src="images/look5.jpg" alt="Earth-toned knitwear">
+        <img src="images/look4.jpg" alt="Natural fiber detail">
+      </div>
+    </section>
+
+    <!-- Slider with JS controls -->
+    <section>
+      <h2>Featured slideshow</h2>
+      <div class="slider">
+        <img src="images/example.jpg"  alt="Slide 1">
+        <img src="images/look1.jpg" alt="Slide 2">
+        <img src="images/look3.jpg" alt="Slide 3">
+      </div>
+      <div class="slider-controls">
+        <button class="btn btn-outline" onclick="prevSlide()">← Previous</button>
+        <button class="btn" onclick="nextSlide()">Next →</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>GreenStyle</h3>
+      <p>
+        Sustainable fashion crafted from organic materials and designed
+        for a greener future.
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Email: info@greenstyle.com</p>
+      <p>Phone: +254 700 123 456</p>
+      <p>Nairobi, Kenya</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 GreenStyle Atelier. All Rights Reserved.</p>
+    <p>ICS</p>
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
