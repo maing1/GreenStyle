@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact — GreenStyle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="site-header">
+    <a href="index.html" class="logo">green<em>style</em>.</a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <span class="eyebrow">Say Hello</span>
+      <h1>Contact us</h1>
+      <p>Have a question about a piece, a repair or our materials? We'd love to hear from you.</p>
+
+      <div class="form-card">
+        <form id="contact-form" onsubmit="return validateForm(event)">
+          <div class="form-row">
+            <label for="f-name">Full Name</label>
+            <input type="text" id="f-name" name="name" placeholder="Your name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-row">
+            <label for="f-pass">Account Password (optional)</label>
+            <input type="password" id="f-pass" name="password" placeholder="••••••••">
+          </div>
+
+          <div class="form-row">
+            <label for="f-tel">Phone</label>
+            <input type="tel" id="f-tel" name="phone" placeholder="+971 50 000 0000">
+          </div>
+
+          <div class="form-row">
+            <label>Preferred contact method</label>
+            <div class="form-inline">
+              <label><input type="radio" name="contact" value="email" checked> Email</label>
+              <label><input type="radio" name="contact" value="phone"> Phone</label>
+              <label><input type="radio" name="contact" value="whatsapp"> WhatsApp</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" placeholder="Tell us how we can help..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+          <button type="reset"  class="btn btn-outline">Reset</button>
+
+          <div id="js-message"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+   <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>GreenStyle</h3>
+      <p>
+        Sustainable fashion crafted from organic materials and designed
+        for a greener future.
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Email: info@greenstyle.com</p>
+      <p>Phone: +254 700 123 456</p>
+      <p>Nairobi, Kenya</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 GreenStyle Atelier. All Rights Reserved.</p>
+    <p>ICS</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
