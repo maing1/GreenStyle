@@ -6,31 +6,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="images/favicon.png">
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header id="site-header">
-    <a href="https://www.un.org/sustainabledevelopment/sustainable-consumption-production/" target="_blank" class="logo">
-      green<em>style</em>.
-    </a>
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="collection.html">Collection</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+ <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand logo"
+         href="https://www.un.org/sustainabledevelopment/sustainable-consumption-production/"
+         target="_blank">
+        green<em>style</em>.
+      </a>
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="collection.html">Collection</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <main>
     <section class="hero">
       <div class="hero-text">
         <span class="eyebrow">The Atelier</span>
         <h1>A wardrobe that grows <em>old</em> with you.</h1>
-        <p>GreenStyle was founded in <strong>Lisbon, Portugal</strong> by four
+        <p>GreenStyle was founded in <strong>Nairobi, Kenya</strong> by four
            designers who shared one belief: fashion should respect both
            <em>people</em> and the <em>planet</em>.</p>
         <p>We work in small batches of fifty. Each garment passes through six
@@ -74,7 +96,7 @@
     <p>ICS</p>
   </div>
 </footer>
-
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
