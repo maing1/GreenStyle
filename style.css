@@ -187,6 +187,141 @@ section {
   color: #f6f1e7;
 }
 
+/* =====================
+   GALLERY PAGE
+===================== */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Gallery Heading */
+
+main section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 30px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #6b8e4e;
+  font-size: 0.8rem;
+}
+
+main h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #2b3a26;
+}
+
+main h2 {
+  color: #2b3a26;
+  margin-bottom: 20px;
+}
+
+/* =====================
+   SLIDESHOW
+===================== */
+
+.slider {
+  max-width: 800px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.slider img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: none;
+}
+
+.slider img:first-child {
+  display: block;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+
+.btn {
+  background: #2b3a26;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #6b8e4e;
+  color: white;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #2b3a26;
+  color: #2b3a26;
+}
+
+.btn-outline:hover {
+  background: #2b3a26;
+  color: white;
+}
+
+/* =====================
+   MOBILE
+===================== */
+
+@media (max-width: 768px) {
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .slider img {
+    height: 300px;
+  }
+
+  main h1 {
+    font-size: 2.2rem;
+  }
+
+  .slider-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /* Footer */
 
 .site-footer {
