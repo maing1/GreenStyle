@@ -14,6 +14,11 @@ h1, h2, h3 {
   color: #2b3a26;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 h1 { font-size: 3rem; margin-bottom: 1rem; }
 h2 { font-size: 2.2rem; margin-bottom: 1rem; }
 h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
@@ -63,6 +68,123 @@ main section {
   padding: 60px 30px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Sections */
+
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 30px;
+}
+
+/* Hero */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero img {
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #6b8e4e;
+  font-size: 0.8rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 15px 0;
+}
+
+.hero h1 em {
+  color: #6b8e4e;
+}
+
+#welcome-msg {
+  font-weight: bold;
+}
+
+/* Buttons */
+
+.btn {
+  background: #2b3a26;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #6b8e4e;
+  color: white;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #2b3a26;
+  color: #2b3a26;
+}
+
+.btn-outline:hover {
+  background: #2b3a26;
+  color: white;
+}
+
+/* Feature List */
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  padding: 10px 0;
+  border-bottom: 1px dashed #cdbfa6;
+}
+
+.feature-list li::before {
+  content: "✿ ";
+  color: #6b8e4e;
+}
+
+/* Sustainability Section */
+
+.section-band {
+  background: #ece2cc;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #2b3a26;
+  color: #f6f1e7;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.card h3 {
+  color: #b9d39a;
+  font-size: 2rem;
+}
+
+.card p {
+  color: #f6f1e7;
 }
 
 /* Footer */
