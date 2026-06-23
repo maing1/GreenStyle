@@ -55,3 +55,15 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     }
 
 });
+
+// Add to Cart
+let cart = [];
+
+function addToCart(productName) {
+
+    cart.push(productName);
+
+    document.getElementById("cart-count").textContent = cart.length;
+
+    alert(productName + " added to cart!");
+}
