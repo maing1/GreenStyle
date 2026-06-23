@@ -1,12 +1,57 @@
-// Welcome message
-function showWelcome() {
-  let h = new Date().getHours();
-  let msg = "Hello";
+// Contact Form Validation
 
-  if (h < 12) msg = "Good morning";
-  else if (h < 18) msg = "Good afternoon";
-  else msg = "Good evening";
+document.getElementById("contact-form").addEventListener("submit", function(event) {
 
-  let el = document.getElementById("welcome-msg");
-  if (el) el.textContent = msg + "!";
-}
+    event.preventDefault();
+
+    let isValid = true;
+
+    // Get form values
+    const name = document.getElementById("f-name").value.trim();
+    const email = document.getElementById("f-email").value.trim();
+    const phone = document.getElementById("f-tel").value.trim();
+    const message = document.getElementById("f-message").value.trim();
+
+    // Message box
+    const output = document.getElementById("js-message");
+
+    // Clear previous message
+    output.textContent = "";
+    output.className = "";
+
+    // Validation
+    if (name === "") {
+        isValid = false;
+    }
+
+    if (email === "" || !email.includes("@")) {
+        isValid = false;
+    }
+
+    if (phone === "") {
+        isValid = false;
+    }
+
+    if (message === "") {
+        isValid = false;
+    }
+
+    // Display result
+    if (isValid) {
+        output.textContent =
+            "Thank you! Your message has been added successfully. We will contact you soon.";
+
+        output.classList.add("msg-success");
+        output.style.display = "block";
+
+        document.getElementById("contact-form").reset();
+
+    } else {
+        output.textContent =
+            "Please fill in all fields correctly.";
+
+        output.classList.add("msg-error");
+        output.style.display = "block";
+    }
+
+});
