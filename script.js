@@ -67,3 +67,13 @@ function addToCart(productName) {
 
     alert(productName + " added to cart!");
 }
+
+//Add to Cart
+let wishlist = [];
+
+function addToWishlist(productName) {
+
+    wishlist.push(productName);
+
+    alert(productName + " added to wishlist!");
+}
