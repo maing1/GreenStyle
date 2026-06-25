@@ -429,9 +429,7 @@ main h2 {
   margin: auto;
 }
 
-/* =====================
-   CONTACT PAGE
-===================== */
+/* CONTACT PAGE*/
 
 .form-card {
   max-width: 700px;
@@ -554,6 +552,42 @@ main p {
 
 }
 
+/* Checkout Page */
+
+.checkout-btn {
+    background: #2b3a26;
+    color: #f6f1e7;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    background: #6b8e4e;
+    color: white;
+}
+
+.list-group-item {
+    background: #faf6ec;
+    border-color: #e5dcc7;
+}
+
+.form-control,
+.form-select {
+    background: #faf6ec;
+    border: 1px solid #cdbfa6;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #6b8e4e;
+    box-shadow: none;
+}
+
+h4 {
+    color: #2b3a26;
+}
 /* Footer */
 
 .site-footer {
