@@ -588,6 +588,87 @@ main p {
 h4 {
     color: #2b3a26;
 }
+
+/* Blog & FAQ Page */
+
+.page-header{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.page-header p{
+    max-width:700px;
+    margin:auto;
+}
+
+/* Blog */
+
+.blog-container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.blog-card{
+    background:#fff;
+    border-radius:8px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.blog-card:hover{
+    transform:translateY(-8px);
+}
+
+.blog-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:5px;
+    margin-bottom:15px;
+}
+
+.blog-card h3{
+    color:#2b3a26;
+    margin-bottom:10px;
+}
+
+/* FAQ */
+
+.faq{
+    width:90%;
+    max-width:900px;
+    margin:60px auto;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.faq details{
+    background:#fff;
+    padding:15px 20px;
+    margin-bottom:15px;
+    border-left:5px solid #6b8e4e;
+    border-radius:5px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.faq summary{
+    cursor:pointer;
+    font-weight:600;
+    color:#2b3a26;
+}
+
+.faq p{
+    margin-top:15px;
+}
+
 /* Footer */
 
 .site-footer {
