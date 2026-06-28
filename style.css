@@ -553,6 +553,23 @@ main p {
 }
 
 /* Checkout Page */
+/* Checkout Heading */
+
+.checkout-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.checkout-heading h1 {
+    color: #2b3a26;
+    margin-bottom: 10px;
+}
+
+.checkout-heading p {
+    color: #4a5247;
+    max-width: 650px;
+    margin: auto;
+}
 
 .checkout-btn {
     background: #2b3a26;
@@ -561,6 +578,8 @@ main p {
     padding: 12px;
     border-radius: 30px;
     transition: 0.3s;
+    width: 100%;
+    font-size: 1rem;
 }
 
 .checkout-btn:hover {
@@ -568,9 +587,44 @@ main p {
     color: white;
 }
 
-.list-group-item {
+.checkout-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.checkout-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(43, 58, 38, 0.1);
+}
+
+.checkout-card h4,
+.checkout-card h5 {
+    color: #2b3a26;
+    margin-bottom: 20px;
+}
+
+.checkout-card label {
+    color: #2b3a26;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.checkout-card .form-control,
+.checkout-card .form-select {
     background: #faf6ec;
-    border-color: #e5dcc7;
+    border: 1px solid #cdbfa6;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.checkout-card .form-control:focus,
+.checkout-card .form-select:focus {
+    border-color: #6b8e4e;
+    box-shadow: none;
+    background: #fff;
 }
 
 .form-control,
