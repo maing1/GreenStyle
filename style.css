@@ -643,6 +643,47 @@ h4 {
     color: #2b3a26;
 }
 
+/* Cart Section */
+.cart-section{
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.cart-section h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cart-card{
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(43,58,38,0.15);
+}
+
+.cart-card h4{
+    margin-bottom: 20px;
+    color: #2b3a26;
+}
+
+
+#cart-items{
+    margin-bottom: 20px;
+}
+
+#cart-items .list-group-item{
+    background: #faf6ec;
+    border: 1px solid #ddd;
+    color: #2b3a26;
+    font-weight: 500;
+    padding: 12px 15px;
+}
+
+.cart-card .btn{
+    width: 100%;
+}
+
 /* Blog & FAQ Page */
 
 .page-header{

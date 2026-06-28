@@ -90,6 +90,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+function clearCart() {
+
+    localStorage.removeItem("cart");
+
+    loadCart();
+
+}
 
 //Add to wishlist
 let wishlist = [];
