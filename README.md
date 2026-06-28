@@ -95,7 +95,6 @@ Contains a contact form with JavaScript validation.
 4. Right-click **index.html** and select **Open with Live Server**.
 5. Navigate through the website using the navigation bar.
 
----
 
 ## Future Improvements
 - User login and registration
